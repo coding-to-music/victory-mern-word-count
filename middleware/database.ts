@@ -19,7 +19,7 @@ export default async function database(
     ) {
         try {
             await mongoose.connect(mongoURL, {
-                useNewUrlParser: true,
+                // useNewUrlParser: true,
                 useUnifiedTopology: true,
                 useCreateIndex: true,
             })
