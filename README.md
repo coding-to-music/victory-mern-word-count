@@ -145,6 +145,46 @@ git push heroku
 npm run deploy
 ```
 
+## Getting this error
+
+```java
+npm run dev
+```
+
+```java
+> victory-mern-word-count@1.0.0 dev
+> next
+
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module './lib/ReactPropTypesSecret'
+Require stack:
+- /mnt/volume_nyc1_01/victory-mern-word-count/node_modules/prop-types/checkPropTypes.js
+- /mnt/volume_nyc1_01/victory-mern-word-count/node_modules/react/cjs/react.development.js
+- /mnt/volume_nyc1_01/victory-mern-word-count/node_modules/react/index.js
+- /mnt/volume_nyc1_01/victory-mern-word-count/node_modules/next/dist/bin/next
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/mnt/volume_nyc1_01/victory-mern-word-count/node_modules/prop-types/checkPropTypes.js:13:30)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/volume_nyc1_01/victory-mern-word-count/node_modules/prop-types/checkPropTypes.js',
+    '/mnt/volume_nyc1_01/victory-mern-word-count/node_modules/react/cjs/react.development.js',
+    '/mnt/volume_nyc1_01/victory-mern-word-count/node_modules/react/index.js',
+    '/mnt/volume_nyc1_01/victory-mern-word-count/node_modules/next/dist/bin/next'
+  ]
+}
+```
+
 ### Heroku Buildpack
 
 See this repo for more info about setting up a node/react app on heroku:
