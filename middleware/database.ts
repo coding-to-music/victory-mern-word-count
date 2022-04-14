@@ -10,8 +10,8 @@ export default async function database(
     res: NextApiResponse,
     next: () => any
 ) {
-    if (!process.env.MONGO_URL) throw new Error('Missing MONGO_URL env var')
-    const mongoURL = process.env.MONGO_URL
+    if (!process.env.MONGODB_URI) throw new Error('Missing MONGO_URL env var')
+    const mongoURL = process.env.MONGODB_URI
 
     if (
         mongoose.connection.readyState == 0 ||

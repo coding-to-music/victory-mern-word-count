@@ -1,35 +1,40 @@
 {
-  "name": "words-visualizations",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:josephsintum/words-visualizations.git",
-  "author": "josephsintum <sjumbam15@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/data-grid": "^4.0.0-alpha.18",
-    "@material-ui/icons": "^4.11.2",
-    "@types/mongoose": "^5.7.32",
-    "@types/natural": "^0.6.3",
-    "@types/victory": "^33.1.4",
-    "date-fns": "^2.16.0",
-    "mongoose": "^5.9.25",
-    "natural": "^2.1.5",
-    "newsapi": "^2.4.0",
-    "next": "^9.4.4",
-    "next-connect": "^0.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "victory": "^35.0.8"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "devDependencies": {
-    "@types/node": "^14.0.13",
-    "@types/react": "^16.9.36",
-    "typescript": "^3.9.5"
-  }
+    "name": "victory-mern-word-count",
+    "version": "1.0.0",
+    "homepage": "https://victory-mern-word-count.herokuapp.com",
+    "main": "index.js",
+    "repository": "git@github.com:coding-to-music/victory-mern-word-count.git",
+    "author": "josephsintum <sjumbam15@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@material-ui/core": "^4.11.2",
+        "@material-ui/data-grid": "^4.0.0-alpha.18",
+        "@material-ui/icons": "^4.11.2",
+        "@types/mongoose": "^5.7.32",
+        "@types/natural": "^0.6.3",
+        "@types/victory": "^33.1.4",
+        "date-fns": "^2.16.0",
+        "mongoose": "^5.9.25",
+        "natural": "^2.1.5",
+        "newsapi": "^2.4.0",
+        "next": "^9.4.4",
+        "next-connect": "^0.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "victory": "^35.0.8"
+    },
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.13",
+        "@types/react": "^16.9.36",
+        "typescript": "^3.9.5"
+    },
+    "cacheDirectories": [
+        "node_modules"
+    ]
 }
