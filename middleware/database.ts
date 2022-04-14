@@ -20,8 +20,8 @@ export default async function database(
         try {
             await mongoose.connect(mongoURL, {
                 // useNewUrlParser: true,
-                useUnifiedTopology: true,
-                useCreateIndex: true,
+                // useUnifiedTopology: true,
+                // useCreateIndex: true,
             })
         } catch (err) {
             res.status(503).json(err)
