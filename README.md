@@ -127,6 +127,8 @@ heroku create victory-mern-word-count
 ```java
 heroku config:set
 
+# NewsAPI(process.env.API_KEY)
+
 heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/victory-mern-word-count?retryWrites=true&w=majority"
 heroku config:set PASSWORD="something-secret"
 
