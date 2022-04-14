@@ -7,21 +7,21 @@
     "author": "josephsintum <sjumbam15@gmail.com>",
     "license": "MIT",
     "dependencies": {
-        "@material-ui/core": "^4.11.2",
-        "@material-ui/data-grid": "^4.0.0-alpha.18",
-        "@material-ui/icons": "^4.11.2",
-        "@types/mongoose": "^5.7.32",
-        "@types/natural": "^0.6.3",
-        "@types/victory": "^33.1.4",
-        "date-fns": "^2.16.0",
-        "mongoose": "^5.9.25",
-        "natural": "^2.1.5",
-        "newsapi": "^2.4.0",
-        "next": "^9.5.5",
-        "next-connect": "^0.7.2",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "victory": "^35.0.8"
+        "@material-ui/core": "^4.12.4",
+        "@material-ui/data-grid": "^4.0.0-alpha.35",
+        "@material-ui/icons": "^4.11.3",
+        "@types/mongoose": "^5.11.96",
+        "@types/natural": "^5.1.1",
+        "@types/victory": "^33.1.5",
+        "date-fns": "^2.28.0",
+        "mongoose": "^6.2.11",
+        "natural": "^5.1.13",
+        "newsapi": "^2.4.1",
+        "next": "^12.1.5",
+        "next-connect": "^0.12.2",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "victory": "^36.3.1"
     },
     "scripts": {
         "dev": "next",
@@ -30,9 +30,9 @@
         "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
     },
     "devDependencies": {
-        "@types/node": "^14.0.13",
-        "@types/react": "^16.9.36",
-        "typescript": "^3.9.5"
+        "@types/node": "^17.0.23",
+        "@types/react": "^18.0.4",
+        "typescript": "^4.6.3"
     },
     "cacheDirectories": [
         "node_modules",

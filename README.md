@@ -284,53 +284,67 @@ npm install -g npm-check-updates
 Output:
 
 ```java
-removed 3 packages, changed 263 packages, and audited 264 packages in 10s
+Checking /mnt/volume_nyc1_01/victory-mern-word-count/package.json
+[====================] 18/18 100%
 
-29 packages are looking for funding
-  run `npm fund` for details
+ @material-ui/core               ^4.11.2  →          ^4.12.4
+ @material-ui/data-grid  ^4.0.0-alpha.18  →  ^4.0.0-alpha.35
+ @material-ui/icons              ^4.11.2  →          ^4.11.3
+ @types/mongoose                 ^5.7.32  →         ^5.11.96
+ @types/natural                   ^0.6.3  →           ^5.1.1
+ @types/victory                  ^33.1.4  →          ^33.1.5
+ date-fns                        ^2.16.0  →          ^2.28.0
+ mongoose                        ^5.9.25  →          ^6.2.11
+ natural                          ^2.1.5  →          ^5.1.13
+ newsapi                          ^2.4.0  →           ^2.4.1
+ next                             ^9.5.5  →          ^12.1.5
+ next-connect                     ^0.7.2  →          ^0.12.2
+ react                          ^16.13.1  →          ^18.0.0
+ react-dom                      ^16.13.1  →          ^18.0.0
+ victory                         ^35.0.8  →          ^36.3.1
+ @types/node                    ^14.0.13  →         ^17.0.23
+ @types/react                   ^16.9.36  →          ^18.0.4
+ typescript                       ^3.9.5  →           ^4.6.3
 
-found 0 vulnerabilities
-```
+Run ncu -u to upgrade package.json
 
-```java
-ncu -u
-```
-
-Output:
-
-```java
 Upgrading /mnt/volume_nyc1_01/victory-mern-word-count/package.json
-[====================] 15/15 100%
+[====================] 18/18 100%
 
- axios                ^0.21.0  →  ^0.26.1
- bcrypt                ^5.0.0  →   ^5.0.1
- body-parser          ^1.19.0  →  ^1.20.0
- cookie-parser         ^1.4.5  →   ^1.4.6
- dotenv                ^8.2.0  →  ^16.0.0
- express              ^4.17.1  →  ^4.17.3
- express-fileupload    ^1.2.0  →   ^1.3.1
- js-cookie             ^2.2.1  →   ^3.0.1
- mongoose            ^5.10.13  →  ^6.2.10
- nodemon               ^2.0.6  →  ^2.0.15
- reactjs-popup         ^2.0.4  →   ^2.0.5
- validator           ^13.1.17  →  ^13.7.0
+ @material-ui/core               ^4.11.2  →          ^4.12.4
+ @material-ui/data-grid  ^4.0.0-alpha.18  →  ^4.0.0-alpha.35
+ @material-ui/icons              ^4.11.2  →          ^4.11.3
+ @types/mongoose                 ^5.7.32  →         ^5.11.96
+ @types/natural                   ^0.6.3  →           ^5.1.1
+ @types/victory                  ^33.1.4  →          ^33.1.5
+ date-fns                        ^2.16.0  →          ^2.28.0
+ mongoose                        ^5.9.25  →          ^6.2.11
+ natural                          ^2.1.5  →          ^5.1.13
+ newsapi                          ^2.4.0  →           ^2.4.1
+ next                             ^9.5.5  →          ^12.1.5
+ next-connect                     ^0.7.2  →          ^0.12.2
+ react                          ^16.13.1  →          ^18.0.0
+ react-dom                      ^16.13.1  →          ^18.0.0
+ victory                         ^35.0.8  →          ^36.3.1
+ @types/node                    ^14.0.13  →         ^17.0.23
+ @types/react                   ^16.9.36  →          ^18.0.4
+ typescript                       ^3.9.5  →           ^4.6.3
 
 Run npm install to install new versions.
-```
 
-```java
-npm install
-```
+npm i --legacy-peer-deps
 
-Output:
+added 16 packages, removed 660 packages, changed 59 packages, and audited 177 packages in 1m
 
-```java
-added 58 packages, removed 42 packages, changed 89 packages, and audited 299 packages in 7s
-
-32 packages are looking for funding
+12 packages are looking for funding
   run `npm fund` for details
 
-found 0 vulnerabilities
+1 high severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
 ```
 
 ## Client directory
