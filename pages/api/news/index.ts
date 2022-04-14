@@ -11,7 +11,7 @@ import { endOfToday, startOfToday } from 'date-fns'
 import { DailyStatsModel } from '../../../models/dailyStats.model'
 import { calcWordFreq } from '../../index'
 
-const newsapi = new NewsAPI(process.env.API_KEY)
+const newsapi = new NewsAPI(process.env.NEWS_API_KEY)
 
 const handler = nextConnect()
 handler.use(middleware)
